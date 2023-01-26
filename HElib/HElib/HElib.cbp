@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="HElib" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/HElib" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/HElib" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="include/helib/ArgMap.h" />
+		<Unit filename="include/helib/CModulus.h" />
+		<Unit filename="include/helib/ClonedPtr.h" />
+		<Unit filename="include/helib/Context.h" />
+		<Unit filename="include/helib/CtPtrs.h" />
+		<Unit filename="include/helib/Ctxt.h" />
+		<Unit filename="include/helib/DoubleCRT.h" />
+		<Unit filename="include/helib/EncodedPtxt.h" />
+		<Unit filename="include/helib/EncryptedArray.h" />
+		<Unit filename="include/helib/EvalMap.h" />
+		<Unit filename="include/helib/FHE.h" />
+		<Unit filename="include/helib/IndexMap.h" />
+		<Unit filename="include/helib/IndexSet.h" />
+		<Unit filename="include/helib/JsonWrapper.h" />
+		<Unit filename="include/helib/Matrix.h" />
+		<Unit filename="include/helib/NumbTh.h" />
+		<Unit filename="include/helib/PAlgebra.h" />
+		<Unit filename="include/helib/PGFFT.h" />
+		<Unit filename="include/helib/PolyMod.h" />
+		<Unit filename="include/helib/PolyModRing.h" />
+		<Unit filename="include/helib/PtrMatrix.h" />
+		<Unit filename="include/helib/PtrVector.h" />
+		<Unit filename="include/helib/Ptxt.h" />
+		<Unit filename="include/helib/SumRegister.h" />
+		<Unit filename="include/helib/apiAttributes.h" />
+		<Unit filename="include/helib/assertions.h" />
+		<Unit filename="include/helib/binaryArith.h" />
+		<Unit filename="include/helib/binaryCompare.h" />
+		<Unit filename="include/helib/bluestein.h" />
+		<Unit filename="include/helib/debugging.h" />
+		<Unit filename="include/helib/exceptions.h" />
+		<Unit filename="include/helib/fhe_stats.h" />
+		<Unit filename="include/helib/helib.h" />
+		<Unit filename="include/helib/hypercube.h" />
+		<Unit filename="include/helib/intraSlot.h" />
+		<Unit filename="include/helib/keySwitching.h" />
+		<Unit filename="include/helib/keys.h" />
+		<Unit filename="include/helib/log.h" />
+		<Unit filename="include/helib/matching.h" />
+		<Unit filename="include/helib/matmul.h" />
+		<Unit filename="include/helib/multicore.h" />
+		<Unit filename="include/helib/norms.h" />
+		<Unit filename="include/helib/partialMatch.h" />
+		<Unit filename="include/helib/permutations.h" />
+		<Unit filename="include/helib/polyEval.h" />
+		<Unit filename="include/helib/powerful.h" />
+		<Unit filename="include/helib/primeChain.h" />
+		<Unit filename="include/helib/randomMatrices.h" />
+		<Unit filename="include/helib/range.h" />
+		<Unit filename="include/helib/recryption.h" />
+		<Unit filename="include/helib/replicate.h" />
+		<Unit filename="include/helib/sample.h" />
+		<Unit filename="include/helib/scheme.h" />
+		<Unit filename="include/helib/set.h" />
+		<Unit filename="include/helib/tableLookup.h" />
+		<Unit filename="include/helib/timing.h" />
+		<Unit filename="include/helib/version.in.h" />
+		<Unit filename="include/helib/zeroValue.h" />
+		<Unit filename="include/helib/zzX.h" />
+		<Unit filename="src/BenesNetwork.cpp" />
+		<Unit filename="src/CModulus.cpp" />
+		<Unit filename="src/Context.cpp" />
+		<Unit filename="src/Ctxt.cpp" />
+		<Unit filename="src/DoubleCRT.cpp" />
+		<Unit filename="src/EaCx.cpp" />
+		<Unit filename="src/EncryptedArray.cpp" />
+		<Unit filename="src/EvalMap.cpp" />
+		<Unit filename="src/IndexSet.cpp" />
+		<Unit filename="src/JsonWrapper.cpp" />
+		<Unit filename="src/NumbTh.cpp" />
+		<Unit filename="src/OptimizePermutations.cpp" />
+		<Unit filename="src/PAlgebra.cpp" />
+		<Unit filename="src/PGFFT.cpp" />
+		<Unit filename="src/PermNetwork.cpp" />
+		<Unit filename="src/PolyMod.cpp" />
+		<Unit filename="src/PolyModRing.cpp" />
+		<Unit filename="src/PrimeGenerator.h" />
+		<Unit filename="src/Ptxt.cpp" />
+		<Unit filename="src/binaryArith.cpp" />
+		<Unit filename="src/binaryCompare.cpp" />
+		<Unit filename="src/binio.cpp" />
+		<Unit filename="src/binio.h" />
+		<Unit filename="src/bluestein.cpp" />
+		<Unit filename="src/debugging.cpp" />
+		<Unit filename="src/eqtesting.cpp" />
+		<Unit filename="src/extractDigits.cpp" />
+		<Unit filename="src/fhe_stats.cpp" />
+		<Unit filename="src/hypercube.cpp" />
+		<Unit filename="src/intelExt.cpp" />
+		<Unit filename="src/intelExt.h" />
+		<Unit filename="src/internal_symbols.h" />
+		<Unit filename="src/intraSlot.cpp" />
+		<Unit filename="src/io.cpp" />
+		<Unit filename="src/io.h" />
+		<Unit filename="src/keySwitching.cpp" />
+		<Unit filename="src/keys.cpp" />
+		<Unit filename="src/log.cpp" />
+		<Unit filename="src/macro.h" />
+		<Unit filename="src/matching.cpp" />
+		<Unit filename="src/matmul.cpp" />
+		<Unit filename="src/norms.cpp" />
+		<Unit filename="src/permutations.cpp" />
+		<Unit filename="src/polyEval.cpp" />
+		<Unit filename="src/powerful.cpp" />
+		<Unit filename="src/primeChain.cpp" />
+		<Unit filename="src/randomMatrices.cpp" />
+		<Unit filename="src/recryption.cpp" />
+		<Unit filename="src/replicate.cpp" />
+		<Unit filename="src/sample.cpp" />
+		<Unit filename="src/tableLookup.cpp" />
+		<Unit filename="src/tapprox.cpp" />
+		<Unit filename="src/timing.cpp" />
+		<Unit filename="src/version.in.cpp" />
+		<Unit filename="src/zzX.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

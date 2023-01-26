@@ -1,0 +1,6 @@
+cd HElib
+mkdir -p build
+cd build
+cmake -DGMP_DIR="/usr/local" -DNTL_DIR="/usr/local" -DCMAKE_INSTALL_PREFIX="../install" -DENABLE_TEST=ON ..
+make -j16
+make install
