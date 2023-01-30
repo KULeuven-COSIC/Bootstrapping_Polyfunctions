@@ -1,6 +1,6 @@
 # Bootstrapping_Polyfunctions
 
-Improved digit extraction procedure for BGV and BFV bootstrapping based on polyfunctions theory. The implementation relies on the HElib library that is included in this repository. Note that some of the header and source files of HElib have been adapted, so those are not identical to the ones found in https://github.com/homenc/HElib. Reinstallation of HElib is therefore required.
+Improved digit extraction procedure for BGV bootstrapping based on polyfunctions theory. The implementation relies on the HElib library that is included in this repository. Note that some of the header and source files have been adapted, so those are not identical to the ones found in [HElib](https://github.com/homenc/HElib). Reinstallation is therefore required.
 
 Any bugs can be reported to robin.geelen@esat.kuleuven.be.
 
