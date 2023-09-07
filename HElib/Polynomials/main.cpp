@@ -100,7 +100,6 @@ static void BM_thinboot(long m,
                         long c,
                         long bits,
                         long t,
-                        int c_m,
                         std::vector<long> mvec,
                         std::vector<long> gens,
                         std::vector<long> ords,
@@ -166,7 +165,6 @@ static void BM_fatboot(long m,
                        long c,
                        long bits,
                        long t,
-                       int c_m,
                        std::vector<long> mvec,
                        std::vector<long> gens,
                        std::vector<long> ords,
@@ -232,7 +230,6 @@ static void BM_thinextract(long m,
                            long c,
                            long bits,
                            long t,
-                           int c_m,
                            int botHigh,
                            bool our_version = true,
                            std::vector<std::vector<long>> e_inner_compose_list = {{1}}) {
@@ -313,7 +310,6 @@ int main() {
                   /*c = */      3,
                   /*bits = */   1200,
                   /*t = */      120,
-                  /*c_m = */    100,
                   /*mvec = */   std::vector<long>{3, 35},
                   /*gens =*/    std::vector<long>{71, 76},
                   /*ords =*/    std::vector<long>{2, 2});
@@ -324,7 +320,6 @@ int main() {
                   /*c = */      3,
                   /*bits = */   1200,
                   /*t = */      120,
-                  /*c_m = */    100,
                   /*mvec = */   std::vector<long>{3, 35},
                   /*gens =*/    std::vector<long>{71, 76},
                   /*ords =*/    std::vector<long>{2, 2});
@@ -335,7 +330,6 @@ int main() {
                      /*c = */      3,
                      /*bits = */   1200,
                      /*t = */      120,
-                     /*c_m = */    100,
                      /*botHigh*/   8);
 
 // TESTS FOR FAT BOOTSTRAPPING
@@ -346,7 +340,6 @@ int main() {
 //                  /*c = */      3,
 //                  /*bits = */   1200,
 //                  /*t = */      120,
-//                  /*c_m = */    200,
 //                  /*mvec = */   std::vector<long>{127, 337},
 //                  /*gens =*/    std::vector<long>{25276, 40133},
 //                  /*ords =*/    std::vector<long>{126, 16},
@@ -358,7 +351,6 @@ int main() {
 //                  /*c = */      3,
 //                  /*bits = */   1200,
 //                  /*t = */      120,
-//                  /*c_m = */    200,
 //                  /*mvec = */   std::vector<long>{127, 337},
 //                  /*gens =*/    std::vector<long>{25276, 40133},
 //                  /*ords =*/    std::vector<long>{126, 16},
@@ -370,7 +362,6 @@ int main() {
 //                  /*c = */      3,
 //                  /*bits = */   1200,
 //                  /*t = */      120,
-//                  /*c_m = */    200,
 //                  /*mvec = */   std::vector<long>{101, 451},
 //                  /*gens =*/    std::vector<long>{19394, 7677},
 //                  /*ords =*/    std::vector<long>{100, 10},
@@ -382,7 +373,6 @@ int main() {
 //                  /*c = */      3,
 //                  /*bits = */   1200,
 //                  /*t = */      120,
-//                  /*c_m = */    200,
 //                  /*mvec = */   std::vector<long>{101, 451},
 //                  /*gens =*/    std::vector<long>{19394, 7677},
 //                  /*ords =*/    std::vector<long>{100, 10},
@@ -394,7 +384,6 @@ int main() {
 //                  /*c = */      3,
 //                  /*bits = */   1200,
 //                  /*t = */      120,
-//                  /*c_m = */    100,
 //                  /*mvec = */   std::vector<long>{43, 757},
 //                  /*gens =*/    std::vector<long>{7571, 28768},
 //                  /*ords =*/    std::vector<long>{42, 54},
@@ -406,7 +395,6 @@ int main() {
 //                  /*c = */      3,
 //                  /*bits = */   1200,
 //                  /*t = */      120,
-//                  /*c_m = */    100,
 //                  /*mvec = */   std::vector<long>{43, 757},
 //                  /*gens =*/    std::vector<long>{7571, 28768},
 //                  /*ords =*/    std::vector<long>{42, 54},
@@ -420,7 +408,6 @@ int main() {
 //                  /*c = */      3,
 //                  /*bits = */   1200,
 //                  /*t = */      120,
-//                  /*c_m = */    200,
 //                  /*mvec = */   std::vector<long>{127, 337},
 //                  /*gens =*/    std::vector<long>{25276, 40133},
 //                  /*ords =*/    std::vector<long>{126, 16},
@@ -432,7 +419,6 @@ int main() {
 //                  /*c = */      3,
 //                  /*bits = */   1200,
 //                  /*t = */      120,
-//                  /*c_m = */    200,
 //                  /*mvec = */   std::vector<long>{127, 337},
 //                  /*gens =*/    std::vector<long>{25276, 40133},
 //                  /*ords =*/    std::vector<long>{126, 16},
@@ -444,7 +430,6 @@ int main() {
 //                  /*c = */      3,
 //                  /*bits = */   1200,
 //                  /*t = */      120,
-//                  /*c_m = */    200,
 //                  /*mvec = */   std::vector<long>{101, 451},
 //                  /*gens =*/    std::vector<long>{19394, 7677},
 //                  /*ords =*/    std::vector<long>{100, 10},
@@ -456,7 +441,6 @@ int main() {
 //                  /*c = */      3,
 //                  /*bits = */   1200,
 //                  /*t = */      120,
-//                  /*c_m = */    200,
 //                  /*mvec = */   std::vector<long>{101, 451},
 //                  /*gens =*/    std::vector<long>{19394, 7677},
 //                  /*ords =*/    std::vector<long>{100, 10},
@@ -468,7 +452,6 @@ int main() {
 //                  /*c = */      3,
 //                  /*bits = */   1200,
 //                  /*t = */      120,
-//                  /*c_m = */    100,
 //                  /*mvec = */   std::vector<long>{43, 757},
 //                  /*gens =*/    std::vector<long>{7571, 28768},
 //                  /*ords =*/    std::vector<long>{42, 54},
@@ -480,7 +463,6 @@ int main() {
 //                  /*c = */      3,
 //                  /*bits = */   1200,
 //                  /*t = */      120,
-//                  /*c_m = */    100,
 //                  /*mvec = */   std::vector<long>{43, 757},
 //                  /*gens =*/    std::vector<long>{7571, 28768},
 //                  /*ords =*/    std::vector<long>{42, 54},
@@ -494,7 +476,6 @@ int main() {
 //                     /*c = */      3,
 //                     /*bits = */   1200,
 //                     /*t = */      120,
-//                     /*c_m = */    200,
 //                     /*botHigh*/   8,
 //                     /*version*/   false);
 //
@@ -504,7 +485,6 @@ int main() {
 //                     /*c = */      3,
 //                     /*bits = */   1200,
 //                     /*t = */      120,
-//                     /*c_m = */    200,
 //                     /*botHigh*/   8,
 //                     /*version*/   true, {{1}});
 //
@@ -514,7 +494,6 @@ int main() {
 //                     /*c = */      3,
 //                     /*bits = */   1200,
 //                     /*t = */      120,
-//                     /*c_m = */    200,
 //                     /*botHigh*/   8,
 //                     /*version*/   true, {{1, 16}});
 //
@@ -524,7 +503,6 @@ int main() {
 //                     /*c = */      3,
 //                     /*bits = */   1200,
 //                     /*t = */      120,
-//                     /*c_m = */    200,
 //                     /*botHigh*/   8,
 //                     /*version*/   true, {{1, 16}, {1, 16}, {1, 16}, {1, 16}, {1, 16}, {1, 16}, {1, 16}, {1}});
 //
@@ -534,7 +512,6 @@ int main() {
 //                     /*c = */      3,
 //                     /*bits = */   1400,
 //                     /*t = */      120,
-//                     /*c_m = */    200,
 //                     /*botHigh*/   5,
 //                     /*version*/   false);
 //
@@ -544,7 +521,6 @@ int main() {
 //                     /*c = */      3,
 //                     /*bits = */   1400,
 //                     /*t = */      120,
-//                     /*c_m = */    200,
 //                     /*botHigh*/   5,
 //                     /*version*/   true, {{1}});
 //
@@ -554,7 +530,6 @@ int main() {
 //                     /*c = */      3,
 //                     /*bits = */   1400,
 //                     /*t = */      120,
-//                     /*c_m = */    200,
 //                     /*botHigh*/   5,
 //                     /*version*/   true, {{1, 6}});
 //
@@ -564,7 +539,6 @@ int main() {
 //                     /*c = */      3,
 //                     /*bits = */   1400,
 //                     /*t = */      120,
-//                     /*c_m = */    200,
 //                     /*botHigh*/   5,
 //                     /*version*/   true, {{1, 6}, {1, 6}, {1, 6}, {1, 6}, {1}});
 
