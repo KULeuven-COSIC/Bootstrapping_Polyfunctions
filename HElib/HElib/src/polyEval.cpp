@@ -490,6 +490,7 @@ PS_parameters getBestParameters(const std::vector<NTL::ZZX>& polynomials, bool l
         // Compute corresponding k parameter and number of multiplications (start with baby step only)
         // Note that we cannot combine lazy rescaling with odd polynomials (different computation in the baby step)
         // --> Lazy rescaling is prioritized since it can be set as a flag in the parameter list
+        // Edit: the above is not true, but it was not updated in the implementation for reproducibility with the paper
         int k = ceiling(d / pow(2, m));
         int nbMultiplications;
         bool currentOdd = false;
