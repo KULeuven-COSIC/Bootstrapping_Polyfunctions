@@ -518,6 +518,7 @@ PS_parameters getBestParameters(const std::vector<NTL::ZZX>& polynomials, bool l
                     // Make sure that we can always compute x^k as a product of two factors that were computed in the baby step
                     // This is done by multiplying x^e and x^d where either both e and d are odd or both are a power of 2
                     // Note that this is not always possible if k == 0 (mod 4) and we might have to increase k by 2
+                    // Edit: the above is not true, but it was not updated in the implementation for reproducibility with the paper
                     int remaining_exponent = k_odd - floorPowerOfTwo(k_odd - 1);
                     if (((k_odd % 4) == 0) && (!isPowerOfTwo(remaining_exponent)))
                         k_odd += 2;
