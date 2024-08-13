@@ -9,6 +9,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License. See accompanying LICENSE file.
  */
+// Notice: this file was modified from HElib
 #include <NTL/BasicThreadPool.h>
 #include <NTL/ZZ.h>
 
@@ -970,10 +971,10 @@ void Ctxt::addConstantCKKS(const DoubleCRT& dcrt,
       std::abs(NTL::conv<double>(ratio * factor / ratFactor) - 1.0);
 
 #if 0
-  std::cerr << "=== ratFactor=" << ratFactor 
+  std::cerr << "=== ratFactor=" << ratFactor
             << " factor=" << factor
             << "\n";
-  std::cerr << "*** ratio=" << ratio 
+  std::cerr << "*** ratio=" << ratio
             << " log2(inaccuracy)=" << std::log2(inaccuracy)
             << "\n";
 #endif

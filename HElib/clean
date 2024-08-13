@@ -1,3 +1,4 @@
 cd HElib
 rm -rf build
 rm -rf install
+cd ..

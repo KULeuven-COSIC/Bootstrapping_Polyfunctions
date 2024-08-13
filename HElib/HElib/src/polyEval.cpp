@@ -9,6 +9,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License. See accompanying LICENSE file.
  */
+// Notice: this file was modified from HElib
 #include <helib/Context.h>
 #include <helib/polyEval.h>
 
