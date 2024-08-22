@@ -58,7 +58,7 @@ for p in primes do
 
             // Write polynomial to file
             SetOutputFile("HElib/Polynomials/polynomials/poly" cat IntegerToString(p) cat "_" cat IntegerToString(e_inner) cat
-                                                                                          "_" cat IntegerToString(e):
+                                                                                          "_" cat IntegerToString(e) cat ".txt":
                           Overwrite := true);
             print &cat[index eq #new_poly select IntegerToString(new_poly[index]) else
                                                  IntegerToString(new_poly[index]) cat " " : index in [1..#new_poly]];

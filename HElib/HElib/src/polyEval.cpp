@@ -1158,7 +1158,7 @@ int init_polynomials() {
         stream1 << primes_list[index]; stream2 << e_inner_list[inner_index]; stream3 << e;
         std::string str1(stream1.str()), str2(stream2.str()), str3(stream3.str());
 
-        std::string fileName((std::string("polynomials/poly") + str1 + std::string("_") + str2 + std::string("_") + str3).c_str());
+        std::string fileName((std::string("polynomials/poly") + str1 + std::string("_") + str2 + std::string("_") + str3 + std::string(".txt")).c_str());
         std::ifstream indata(fileName.c_str());
         if (!indata)
           break;
